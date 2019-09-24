@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import current_datetime
+from .views import index
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('time/', current_datetime),
+    path('index/', index),
 ]

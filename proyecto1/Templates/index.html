@@ -1,7 +1,15 @@
 {% extends "base.html" %}
+{% block navbar %}
 
+{% endblock %}
 {% block title %}The current time{% endblock %}
 
 {% block content %}
-<p>It is now {{ current_date }}.</p>
+<p>Fecha y hora: {{ current_date }}.</p>
+<ul>
+    {% for datos in data %}
+        <li> {{ datos.1 }} </li> 
+    {% endfor %}
+</ul>
+<p> {{ data_nacion }}</p>
 {% endblock %}
